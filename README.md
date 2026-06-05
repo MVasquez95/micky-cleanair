@@ -18,9 +18,9 @@ El proyecto incluye:
 
 ## Variables de entorno
 
-Crea un archivo `.env` con:
-DATABASE_URL=postgresql://user:password@localhost:5432/cleanair_db
-OPENAQ_API_KEY=tu_api_key_aqui
+Crea un archivo `.env` con:  
+DATABASE_URL=postgresql://user:password@localhost:5432/cleanair_db  
+OPENAQ_API_KEY=tu_api_key_aqui  
 OPENAQ_BASE_URL=https://api.openaq.org/v3
 
 ## Levantar proyecto
