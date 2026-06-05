@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: cleanair_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: cleanair_user
+      POSTGRES_PASSWORD: cleanair_password
+      POSTGRES_DB: cleanair_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - cleanair_postgres_data:/var/lib/postgresql/data
+
+volumes:
+  cleanair_postgres_data:

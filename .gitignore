@@ -1,0 +1,36 @@
+# Byte-compiled / Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env
+
+# VSCode
+.vscode/
+
+# MacOS
+.DS_Store
+
+# Logs
+*.log
+
+# Docker
+*.env
+docker-compose.override.yml
+
+# Python testing
+htmlcov/
+.coverage
+.pytest_cache/
+
+# MyPy
+.mypy_cache/
+
+# Pycharm
+.idea/
+
+# Backup files
+*.bak
+*.swp
