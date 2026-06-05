@@ -40,3 +40,19 @@ python -m scripts.create_tables
 
 # Levantar FastAPI
 uvicorn app.main:app --reload
+
+## Endpoint: /countries/
+
+Devuelve la lista de países disponibles en OpenAQ, normalizada con Pydantic schema `CountrySchema`.  
+
+### Request
+GET /countries/
+
+
+### Response (ejemplo)
+
+```json
+[
+  { "id": 1, "code": "ID", "name": "Indonesia" },
+  { "id": 2, "code": "PE", "name": "Peru" }
+]
