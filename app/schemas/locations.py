@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 
-class CitySchema(BaseModel):
+class LocationSchema(BaseModel):
     id: int
     country_code: str
     name: str

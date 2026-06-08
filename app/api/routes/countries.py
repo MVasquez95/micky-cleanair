@@ -7,6 +7,14 @@ router = APIRouter()
 
 @router.get("/", response_model=List[CountrySchema])
 async def get_countries():
+    """Obtiene la lista de países disponibles en OpenAQ.
+
+    Returns:
+        List[CountrySchema]: Lista de países disponibles.
+
+    Raises:
+        HTTPException: Si ocurre un error al llamar a OpenAQ
+    """
     service = OpenAQService()
     try:
         data = await service.get_countries()

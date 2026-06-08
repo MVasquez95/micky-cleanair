@@ -1,15 +1,16 @@
 from pydantic import BaseModel
 from datetime import datetime
+from typing import Optional
 
 class MeasurementSchema(BaseModel):
-    country: str
-    city: str
-    location: str
-    parameter: str
+    country: Optional[str] = None
+    city: Optional[str] = None
+    location: Optional[str] = None
+    parameter: Optional[str] = None
     value: float
-    unit: str
-    measured_at: datetime
-    source_name: str | None = None
-
+    unit: Optional[str] = None
+    measured_at: Optional[datetime] = None
+    source_name: Optional[str] = None
+    
     class Config:
         orm_mode = True
